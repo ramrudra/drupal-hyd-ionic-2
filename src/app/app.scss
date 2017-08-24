@@ -1,0 +1,28 @@
+ng-component ion-header ion-navbar,
+ng-component ion-header ion-navbar .toolbar-background {
+  background-color: #1e90ff !important;
+  color: #ffffff !important;
+  min-height: 65px !important;
+
+  .toolbar-title {
+    color: #fff;
+    text-align: center;
+
+  img {
+    margin-right: 5px;
+    vertical-align: bottom;
+  }
+
+  span {
+    color: #fff !important;
+    line-height: 35px;
+  }
+}
+
+}
+
+ion-nav {
+  .toolbar-title {
+    text-align: center;
+  }
+}

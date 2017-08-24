@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>tracks</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="tracks" padding>
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button aria-pressed="true" (click)="changeTrack($event, 'track1')" value="track1">
+        Track 1
+      </ion-segment-button>
+      <ion-segment-button (click)="changeTrack($event, 'track2')" value="track2">
+        Track 2
+      </ion-segment-button>
+      <ion-segment-button (click)="changeTrack($event, 'track3')" value="track3">
+        Track 3
+      </ion-segment-button>
+      <ion-segment-button (click)="changeTrack($event, 'track4')" value="track4">
+        Track 4
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <ion-card *ngFor="let session of sessions">
+    <ion-card-content>
+      <div class="session-title">{{ session.title }}</div>
+      <strong>Time:</strong> {{ session.time }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

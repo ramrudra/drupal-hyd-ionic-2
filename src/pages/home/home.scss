@@ -1,0 +1,23 @@
+page-home {
+  $size: 75px;
+
+  .item {
+    margin-bottom: 10px;
+
+    ion-avatar {
+      img {
+        width: $size;
+        height: $size;
+      }
+    }
+
+    h3 {
+      margin: 5px 0;
+    }
+
+    a {
+      padding: 5px;
+      text-decoration: none;
+    }
+  }
+}
